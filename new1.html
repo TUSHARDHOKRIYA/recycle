@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecoRecycle - Recycle E-Waste</title>
+    <link rel="stylesheet" href="1new.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.jpeg" alt="ecoRecycle Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Schedule Pickup</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <video autoplay loop muted playsinline class="hero-video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Recycle <span class="highlight">E-waste</span>, Earn Rewards!</h1>
+            <p>Join the movement to reduce electronic waste and earn points.</p>
+            <button class="btn">Schedule Pickup Now</button>
+            <div class="circles-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stat-card"> <h2>50M+</h2> <p>Tons of E-waste Generated yearly</p> </div>
+        <div class="stat-card"> <h2>10K+</h2> <p>Active Recyclers</p> </div>
+        <div class="stat-card"> <h2>500+</h2> <p>Collection Points</p> </div>
+        <div class="stat-card"> <h2>1M+</h2> <p>Items Recycled</p> </div>
+    </section>
+
+    <section class="features-section">
+        <h2>Why choose EcoRecycle?</h2>
+        <div class="features-container">
+            <div class="feature-card"> <h3>Geolocation Tracking</h3> <p>Real-time tracking of pickups</p> </div>
+            <div class="feature-card"> <h3>AI Categorization</h3> <p>Automatic e-waste classification</p> </div>
+            <div class="feature-card"> <h3>Rewards Points</h3> <p>Earn points for recycling</p> </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logo.png" alt="EcoRecycle Logo">
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>EcoRecycle.in</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Mission Statement</a></li>
+                    <li><a href="#">Impact & Reach</a></li>
+                    <li><a href="#">Data Visualisations</a></li>
+                    <li><a href="#">Meet the Team</a></li>
+                    <li><a href="#">Join the Team</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">Google News</a></li>
+                </ul>
+                <h3>Support Us</h3>
+                <ul>
+                    <li><a href="#">Partnering</a></li>
+                    <li><a href="#">Fund your mission</a></li>
+                    <li><a href="#">Supporters</a></li>
+                    <li><a href="#">Join the EO</a></li>
+                    <li><a href="#">movement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contribute</h3>
+                <ul>
+                    <li><a href="#">EO Photographers</a></li>
+                    <li><a href="#">Competitions</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Write for Us</a></li>
+                    <li><a href="#">Edit for Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>+91 85911 01169</p>
+                <p>Email: <a href="mailto:ecorecycle@gmail.com">ecorecycle@gmail.com</a></p>
+                <p>EcoRecycle.in Ltd</p>
+                <p>Kondhwa, Pune, Maharashtra</p>
+                <p>India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        const statCards = document.querySelectorAll('.stat-card');
+        window.addEventListener('scroll', () => {
+            statCards.forEach(card => {
+                const position = card.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+                if (position < screenHeight - 100) {
+                    card.classList.add('visible');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
