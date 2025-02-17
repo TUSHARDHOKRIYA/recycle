@@ -1,0 +1,187 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-cyan-100">
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+   <div class="flex items-center">
+    <img alt="Ecorecycle logo" class="h-10" height="50" src="https://storage.googleapis.com/a1aa/image/z2BkOt-tKv6eWqUwevz_QwBpv-N_LbfG-6Wr23_h73I.jpg" width="50"/>
+    <span class="ml-2 text-green-600 font-bold">
+     ECORECYCLE
+    </span>
+   </div>
+   <div class="flex items-center">
+    <img alt="User avatar" class="h-10 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/-iCUK9qXbUvnOSlOPQDhfWRo_HR-dBV1cUsuWFcLt9w.jpg" width="50"/>
+    <span class="ml-2">
+     Logout
+    </span>
+   </div>
+  </header>
+  <main class="p-4">
+   <section class="mb-8">
+    <div class="bg-white shadow-md rounded-lg p-4">
+     <h2 class="text-2xl font-bold text-center mb-4">
+      Collection Request
+     </h2>
+     <div class="flex justify-center space-x-4">
+      <div class="bg-white shadow-md rounded-lg p-4 text-center w-1/4">
+       <p class="text-3xl text-green-600">
+        0
+       </p>
+       <p>
+        Total request
+       </p>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-4 text-center w-1/4">
+       <p class="text-3xl text-green-600">
+        0
+       </p>
+       <p>
+        Pending
+       </p>
+      </div>
+      <div class="bg-white shadow-md rounded-lg p-4 text-center w-1/4">
+       <p class="text-3xl text-green-600">
+        0
+       </p>
+       <p>
+        Complete
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="bg-white shadow-md rounded-lg p-4">
+     <div class="flex justify-between items-center mb-4">
+      <h2 class="text-2xl font-bold">
+       Report
+      </h2>
+      <div class="relative">
+       <button class="bg-gray-200 p-2 rounded-md flex items-center">
+        <span>
+         All
+        </span>
+        <i class="fas fa-caret-down ml-2">
+        </i>
+       </button>
+       <div class="absolute right-0 mt-2 w-48 bg-white border rounded-md shadow-lg hidden">
+        <ul>
+         <li class="p-2 hover:bg-gray-100 flex items-center">
+          <i class="fas fa-check text-green-600 mr-2">
+          </i>
+          Accepted
+         </li>
+         <li class="p-2 hover:bg-gray-100 flex items-center">
+          <i class="fas fa-check-double text-yellow-600 mr-2">
+          </i>
+          Completed
+         </li>
+         <li class="p-2 hover:bg-gray-100 flex items-center">
+          <i class="fas fa-times text-red-600 mr-2">
+          </i>
+          Rejected
+         </li>
+         <li class="p-2 hover:bg-gray-100 flex items-center">
+          <i class="fas fa-clock text-gray-600 mr-2">
+          </i>
+          Pending
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <table class="w-full text-left">
+      <thead>
+       <tr class="border-b">
+        <th class="py-2">
+         Name
+        </th>
+        <th class="py-2">
+         Item
+        </th>
+        <th class="py-2">
+         Date
+        </th>
+        <th class="py-2">
+         Status
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="border-b">
+        <td class="py-2">
+         Shubham
+        </td>
+        <td class="py-2">
+         Laptop
+        </td>
+        <td class="py-2">
+         16-02-2025
+        </td>
+        <td class="py-2">
+         Completed
+        </td>
+       </tr>
+       <tr class="border-b">
+        <td class="py-2">
+         Harshal
+        </td>
+        <td class="py-2">
+         Phone
+        </td>
+        <td class="py-2">
+         17-02-2025
+        </td>
+        <td class="py-2">
+         Pending
+        </td>
+       </tr>
+       <tr class="border-b">
+        <td class="py-2">
+         Harsh
+        </td>
+        <td class="py-2">
+         Earbuds
+        </td>
+        <td class="py-2">
+         18-02-2025
+        </td>
+        <td class="py-2">
+         Pending
+        </td>
+       </tr>
+       <tr>
+        <td class="py-2">
+         Shreesai
+        </td>
+        <td class="py-2">
+         Laptop
+        </td>
+        <td class="py-2">
+         17-02-2025
+        </td>
+        <td class="py-2">
+         Accepted
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </section>
+  </main>
+  <script>
+   // Dropdown functionality
+        document.querySelector('.relative button').addEventListener('click', function() {
+            document.querySelector('.relative div').classList.toggle('hidden');
+        });
+  </script>
+ </body>
+</html>
