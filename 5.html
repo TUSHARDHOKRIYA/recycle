@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRecycle</title>
+    <link rel="stylesheet" href="5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img id="logo" src="logo.png"></div>
+        <div class="nav-links">
+            <a href="#" class="newtorecycle">Already have an Account?</a>
+            <a href="#" class="signup-btn">Log In</a>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!-- Left Section -->
+        <div class="info-section">
+            <h2>What can you do with EcoRecycle?</h2>
+            <p>✅ Earn rewards Points</p>
+            <p>✅ Plant a tree by recycling points</p>
+        </div>
+
+        <!-- Right Section -->
+        <div class="form-section">
+            <div class="form">
+            <h1>Hi there! Let's get you started</h1>
+            <h2>Create your Account and recycle in minutes</h2>
+            <p  id="wantpara">I want to:</p>
+
+            <div class="buttons">
+                <button class="recycle-btn">Recycle E-Waste</button>
+                <button class="collect-btn">Collect E-Waste</button>
+            </div>
+
+            <form>
+                <label for="name">Name*</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="Company-name" class="Company-name">Company Name*</label>
+                <input type="text" id="Company-name" placeholder="Enter your Company name" class="Company-name" required>
+
+                <label for="email" >Email*</label>
+                <input type="email" id="email" placeholder="Enter your Email address" required>
+
+                <label for="phone">Phone Number*</label>
+                <div class="phone-input">
+                    <div class="custom-select">
+                        <img id="selected-flag" src="india-flag.png" alt="Flag" class="flag" />
+                        <select id="country-code">
+                            <option value="+91" data-flag="india-flag.png">+91</option>
+                            <option value="+1" data-flag="us-fleg.jpeg">+1</option>
+                            <option value="+44" data-flag="uk-flag.jpeg">+44</option>
+                        </select>
+                    </div>
+                    <input type="text" id="phone" placeholder="Enter your Phone Number" required>
+                </div>
+                
+                
+                <button type="submit" class="submit-btn">Start Recycling</button>
+            </form>
+
+            <p class="terms">By clicking on the above button, you agree to our<br> Terms of Service and Privacy Policy</p>
+        </div>
+    </div>
+    </div>
+<script>
+    /////Flag Generator
+    document.getElementById("country-code").addEventListener("change", function() {
+    let selectedOption = this.options[this.selectedIndex];
+    let flagImage = document.getElementById("selected-flag");
+    flagImage.src = selectedOption.getAttribute("data-flag");
+});
+
+////// Recycle Button
+let b = document.querySelector(".recycle-btn");
+let a = document.querySelector(".collect-btn");
+let c = document.querySelectorAll(".Company-name"); 
+
+b.addEventListener("click", () => {
+    b.style.backgroundColor = "#34DF09";
+    b.style.color = "#ffffff";  
+    a.style.backgroundColor = "#ffffff";
+    a.style.color = "#34DF09";
+
+    c.forEach(element => {
+        element.style.display = "none";
+    });
+});
+
+a.addEventListener("click", () => {
+    a.style.backgroundColor = "#34DF09";
+    a.style.color = "#ffffff"; 
+    b.style.backgroundColor = "#ffffff";
+    b.style.color = "#34DF09";
+
+    c.forEach(element => {
+        element.style.display = "block";
+    });
+});
+
+
+
+</script>
+</body>
+</html>

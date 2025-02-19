@@ -1,0 +1,332 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #56ab2f;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+ width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+ 
+}
+
+/* Left Section */
+.info-section {
+    flex: 1;
+    padding: 20px;
+    background: linear-gradient(164deg, #D6FFFE 37.52%, #00FF62 88.99%);    color: black;
+    display: flex;
+    flex-direction: column;
+    width:20%;
+}
+
+.info-section h2 {
+    color: #000;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; /* 126.667% */
+    margin-top: 91px;
+    margin-bottom: 10px;
+}
+.info-section>p{
+    margin-left: 100px;
+}
+
+/* Right Section */
+.form-section {
+    flex: 2;
+    padding: 20px;
+ background-color:  #D6FFFE;
+    width: 80%;
+    
+    
+}
+    .form{
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+        width: 409px;
+        height: 551px;
+        margin-left: 25px;
+    
+    }
+
+
+    h1 {
+        color: #000;
+        font-family: "Averia Serif Libre";
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+#wantpara {
+    color: #000;
+    font-family: "Inria Serif";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; /* 146.154% */
+    text-align: center;
+    margin-top: 21px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+}
+
+button {
+  
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 150px;
+height: 37px;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-family: "Inria Serif";
+font-size: 11px;
+font-style: normal;
+font-weight: 700;
+line-height: 19px; /* 172.727% */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.recycle-btn {
+    background-color: #4CAF50;
+    color: white;
+   
+    
+}
+
+.collect-btn {
+    background-color: #ffffff;
+    border: 2px solid #4CAF50;
+    color: #4CAF50;
+    margin-left: 20px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 10px;
+    margin-left:40px; ;
+}
+
+label {
+    color: #000;
+    font-family: "Inria Serif";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; /* 190% */
+    display: block;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    
+}
+
+input, select {
+    border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.51);
+background: #FFF;
+width: 325px;
+height: 33px;
+flex-shrink: 0;
+margin: auto;
+}
+.phone-input {
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+   
+    width: fit-content;
+   
+}
+
+.custom-select {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    
+    border-right: 1px solid #ccc; /* Adds separation */
+    padding-left:5px;
+    padding-right:5px;
+    margin-right:0px;
+    background-color: white;
+}
+
+.custom-select .flag {
+    width: 18px; /* Adjusted flag size */
+    height: 14px;
+    margin-right: 5px;
+}
+
+.custom-select select {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 3px;
+    cursor: pointer;
+    appearance: none;
+    width: auto;
+}
+
+.phone-input input {
+    outline: none;
+    font-size: 14px;
+    width: 247px; /* Keeping your defined width */
+    padding: 5px;
+    margin-left: 15px; /* Adjusted spacing between select and input */
+}
+
+
+/* Submit Button */
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    width: 325px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #FFF;
+text-align: center;
+font-family: "Inria Serif";
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 190% */
+height: 31px;
+}
+
+/* Terms */
+.terms {
+    
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.65);
+text-align: center;
+font-family: "Inria Serif";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 19px; /* 190% */
+}
+
+
+#logo {
+    height: 51px;
+    width: 121.25px;
+    }
+    
+    .newtorecycle{
+        color: #000;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 7px;
+    
+    }
+    .signup-btn{
+        border-radius: 5px;
+    border: 1px solid rgba(14, 75, 243, 0.51);
+    background: #FFF;
+    padding: 7px;
+    color: #0E4BF3;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px; /* 190% */
+    }
+    .Company-name{
+        display: none;
+    }
+    .Company-name {
+        display: none;
+        margin: 0;
+        margin-top: 6px;
+        padding: 0;
+    }
+    input {
+        padding-left: 10px;
+    }
+    
+    #Company-name::placeholder{
+        padding-left: 10px;
+        
+    }
+    .form>h2{
+        color: #000;
+text-align: center;
+font-family: "Inria Serif";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 19px; /* 126.667% */
+margin-top: 7px;
+    }

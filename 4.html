@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRecycle Login</title>
+    <link rel="stylesheet" href="4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img id="logo" src="logo.png"></div>
+        <div class="nav-links">
+            <a href="#" class="newtorecycle">New to EcoRecycle?</a>
+            <a href="#" class="signup-btn">SIGN UP</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-section">
+            <img id="main-logo" src="logo.png">
+            <div class="description-box">
+            <p class="tagline">Recycle your e-waste today and earn rewards for a greener tomorrow!</p>
+            <p class="description">Be part of the solution! Turn your old electronics into a force for good. Join our e-waste recycling program and earn rewards while you help make our planet cleaner and greener. Start today!</p>   
+        </div>
+         <button class="explore-btn">EXPLORE</button>
+        </div>
+
+        <div class="right-section">
+            <div class="login-card">
+                <header>
+                    <h2>Login To EcoRecycle Dashboard</h2>
+                    <h1>Welcome</h1>
+                    <p>I want to</p>
+                </header>
+                <span>
+                    <button class="recycle-ewaste-button">Recycle E-waste</button>
+                    <button class="collect-ewaste-button">Collect E-waste</button>
+                </span>
+                <form class="login-form">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"  placeholder="Enter your Email-address">
+        
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+        
+                    <label for="Company-Id" id="company-label">Company ID</label>
+                    <input type="text" id="Company-Id" placeholder="Enter your Company ID">
+        
+                    <span class="forgot-email">Forgot email?</span>
+        
+                    <button class="sign-in-btn">Sign In</button>
+        
+                    <div class="separator">
+                        <div class="line"></div>
+                        <span>or</span>
+                        <div class="line"></div>
+                    </div>
+        
+                    <button class="google-login">
+                        Login with <img src="logo.png" alt="Google Logo">
+                    </button>
+                </form>
+                <footer>
+                    <span>
+                        © 2023 - EcoRecycle Pvt. Ltd. • Terms • Privacy • Support
+                    </span>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+  let b = document.querySelector(".recycle-ewaste-button");
+let a = document.querySelector(".collect-ewaste-button");
+let companyLabel = document.querySelector("#company-label");
+let companyInput = document.querySelector("#Company-Id");
+
+b.addEventListener("click", () => {
+    companyLabel.style.display = "none"; 
+    companyInput.style.display = "none"; 
+    b.style.backgroundColor = "#34DF09";
+    a.style.backgroundColor = "#ffffff";
+    a.style.color = "#34DF09";
+});
+
+a.addEventListener("click", () => {
+    companyLabel.style.display = "block"; 
+    companyInput.style.display = "block"; 
+    a.style.backgroundColor = "#34DF09";
+    b.style.backgroundColor = "#ffffff";
+    b.style.color = "#34DF09";
+   
+});
+
+
+
+    </script>
+</body>
+</html>
